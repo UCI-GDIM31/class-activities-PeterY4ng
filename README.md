@@ -1,7 +1,7 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Hello World!
+Hello World! £º£©
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
