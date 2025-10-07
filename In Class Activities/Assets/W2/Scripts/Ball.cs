@@ -71,12 +71,13 @@ public class Ball : MonoBehaviour
         {
             // STEP 5 ---------------------------------------------------------
             // Uncomment the below line and fix it to set the value of 'g' to ONE.
-            //g = 1.0;
+            g = 1;
             // STEP 5 ---------------------------------------------------------
         }
 
         // STEP 6 -------------------------------------------------------------
         // Below this comment, write a line of code to MULTIPLY 'b' by 1.2.
+        b *= 1.2f;
 
         // STEP 6 -------------------------------------------------------------
 
@@ -84,7 +85,11 @@ public class Ball : MonoBehaviour
         // Below this comment, write an IF STATEMENT:
         // IF the value of 'b' is GREATER THAN **OR** EQUAL TO 1.0,
         //      set 'b' to 0.1. 
-        
+        if (b >= 1.0f)
+        {
+            b = 0.1f;
+        }
+
         // STEP 7 -------------------------------------------------------------
 
         // This line assigns a new color to your Ball with the new RGB values
