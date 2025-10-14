@@ -108,12 +108,14 @@ public class Ball : MonoBehaviour
         // Below this comment, write 2 lines of code to ADD the values of 
         //      r, g, and b, and then divide the result by 3.
         // Store the result in a variable named 'brightness'.
-        
+
+        float brightness = (r + g + b) / 3.0f;
+
         // STEP 8 -------------------------------------------------------------
 
         // STEP 9 -------------------------------------------------------------
         // Uncomment the below line to make the 'brightness' text change in your game.
-        //_brightnessText.text = "brightness = " + brightness;
+        _brightnessText.text = "brightness = " + brightness;
         // STEP 9 -------------------------------------------------------------
     }
 }
