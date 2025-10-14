@@ -11,6 +11,8 @@ r, g, and b are float variables because they represent decimal values for colors
 ### W3
 Table 19
 as player¡¯s sanity level becomes lower, the light will become dimmer, and the light itself is void because the light is depending on player¡¯s sanity level
+1.We can liken a class to an "architectural drawing", and a Component to an "actual building" constructed according to the drawing. A class, as a template, is like a drawing that specifies the overall style and structure of a building; when a class is attached to a game object, it becomes a component, just as a specific building is built according to the drawing. Member variables are like the "traits" of a building, such as the height, color, and number of windows of the building, which are the properties of each class (drawing). Methods are what the building can "do", such as providing accommodation for people, being used for commercial office work, and withstanding certain wind and rain, that is, the behavioral capabilities of the class.
+2.Because in Step 8 and Step 9, we kept changing the ball's (related) variable but didn't set an upper limit, so the ball will become brighter and brighter.
 
 ## Open-Source Assets
 ### W1

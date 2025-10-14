@@ -95,7 +95,7 @@ public class CatW3 : MonoBehaviour
             // Below this comment, CALL the method named DecreaseHealth.
             // Notice this method's return type is void- that means we don't
             //      have to store the result anywhere.
-            
+            DecreaseHealth();
 
             // STEP 2 ---------------------------------------------------------
 
@@ -104,10 +104,10 @@ public class CatW3 : MonoBehaviour
             // IF the cat's health is below or equal to 0, AND
             //      the _destroyCatWhenDead flag is true,
             // then CALL the DestroyCat method.
-            //
+         if (_health <= 0 && _destroyCatWhenDead);
             // Try toggling the Destroy Cat When Dead setting on the Inspector,
             //      and see how the cat is removed ONLY when it's checked!
-            
+
 
             // STEP 6 ---------------------------------------------------------
         }
@@ -129,13 +129,14 @@ public class CatW3 : MonoBehaviour
     private void DecreaseHealth()
     {
         // write Step 3 below this comment!
-
+        _health -= 1;
+        _healthText.text = "health = " + _health;
 
         // STEP 5 -------------------------------------------------------------
         // Once you've finished Step 4, CALL the GetHealthSpeechText method
         //      and store the result in _speechText's text variable.
         // This will look very similar to the above line to change _healthText ;)
-
+        _speechText.text = GetHealthSpeechText();
 
         // STEP 5 -------------------------------------------------------------
     }
@@ -153,23 +154,32 @@ public class CatW3 : MonoBehaviour
     //      return "OH NO!".
     // 2. Otherwise, return "ouch".
 
-    //private ??? GetHealthSpeechText()
-    //{
+    private string GetHealthSpeechText()
+    {
+        if (_health < _maxHealth / 2)
+        {
+            return "OH NO!";
+        }
+        else
+        {
+            return "ouch";
+        }
+    }
         // put the method body here!
         
-    //}
     
-    // STEP 4 -----------------------------------------------------------------
 
-    // ------------------------------------------------------------------------
-    private void ChangeColor(BallW3 ball)
-    {
+// STEP 4 -----------------------------------------------------------------
+
+// ------------------------------------------------------------------------
+private void ChangeColor(BallW3 ball)
+{
         // STEP 7 -------------------------------------------------------------
         // Set the value of the _spriteRenderer's color variable to the value
         //      of the ball's ballRenderer's color variable.
         // This means you'll need to use the '.' twice to get to the color :)
-
-
+        // _spriteRenderer.color = ball.ballRenderer.color;
+        _spriteRenderer.color = ball.ballRenderer.color;
         // STEP 7 -------------------------------------------------------------
     }
     
