@@ -8,6 +8,10 @@ Create future Devlog sub-headers with the three # symbols, then write your Devlo
 ### Devlogs
 r, g, and b are float variables because they represent decimal values for colors, so they can't be integers, booleans, or strings. The _bounces variable is an integer because the number of times a ball bounces can only be a whole number, not a decimal, boolean, or string. The error I encountered in Step 4 of Part 2 was "Assets\W2\Scripts\Ball.cs(67,18): error CS1002: ; expected", which means I didn't add a ";" at the end of that line of code, making it incomplete.
 
+### W3
+Table 19
+as player¡¯s sanity level becomes lower, the light will become dimmer, and the light itself is void because the light is depending on player¡¯s sanity level
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
