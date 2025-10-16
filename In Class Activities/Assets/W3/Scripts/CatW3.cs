@@ -104,7 +104,10 @@ public class CatW3 : MonoBehaviour
             // IF the cat's health is below or equal to 0, AND
             //      the _destroyCatWhenDead flag is true,
             // then CALL the DestroyCat method.
-         if (_health <= 0 && _destroyCatWhenDead);
+         if (_health <= 0 && _destroyCatWhenDead)
+            {
+                DestroyCat();
+            }
             // Try toggling the Destroy Cat When Dead setting on the Inspector,
             //      and see how the cat is removed ONLY when it's checked!
 
