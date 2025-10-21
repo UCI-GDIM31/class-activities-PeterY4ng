@@ -21,6 +21,8 @@ line 28 is A C# statement used to branch between different lines of code. The co
 to detect whether the player is grounded or not, and whether the player press the space
 line 32 is a ture or false varible, its type is boolean. Means when cat is not grounded, its state will become fales, in order to preven the player from double jumping
 
+The method I came up with is to add rigid bodies to the kitten, the football, and the goal because they are all objects affected by physics. I locked the XYZ rotation and position of the goal because the goal doesn't move at all. (Later I learned that actually setting the goal's rigid body like this is not much different from having no rigid body at all.) Both the football and the kitten need to have rigid bodies because they will collide with each other. I set "Is Trigger" on for the goal because the goal should be able to add points when the ball passes through it. When I tested the game for the first time, every time the football rolled to the edge, it would just fall off, but later I added the "Bounce Off the Wall" component to the football, and then the football wouldn't fall off.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
