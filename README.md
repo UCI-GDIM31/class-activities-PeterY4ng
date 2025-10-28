@@ -23,6 +23,15 @@ line 32 is a ture or false varible, its type is boolean. Means when cat is not g
 
 The method I came up with is to add rigid bodies to the kitten, the football, and the goal because they are all objects affected by physics. I locked the XYZ rotation and position of the goal because the goal doesn't move at all. (Later I learned that actually setting the goal's rigid body like this is not much different from having no rigid body at all.) Both the football and the kitten need to have rigid bodies because they will collide with each other. I set "Is Trigger" on for the goal because the goal should be able to add points when the ball passes through it. When I tested the game for the first time, every time the football rolled to the edge, it would just fall off, but later I added the "Bounce Off the Wall" component to the football, and then the football wouldn't fall off.
 
+### W5
+I am not quite understand what is Getcomponent
+my classmates tood me that it is used to get other components that are attached to the same game object. For example, in the player controller script, we use Getcomponent to get the rigidbody component of the player game object so that we can apply forces to it and make it move. I also learned that Getcomponent can be used to get components from other game objects by using GameObject.Find() to find the game object first, and then using Getcomponent on that game object.
+
+I think for the member variables, we need Need a NavMeshAgent variable (for navigation), an Animator variable (for animation control), a float variable for movement speed
+Need Unity-provided methods like Start() (initialize variables), Update() (update logic every frame)
+For start(), When the script starts, initialize NavMeshAgent, Animator, and set the initial state and movement speed.
+For update(), Continuously check for player input, update the character's movement and animation based on the input and NavMeshAgent's state.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
