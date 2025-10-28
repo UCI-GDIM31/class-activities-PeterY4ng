@@ -8,7 +8,7 @@ using UnityEngine.AI;
 public class DeerW5 : MonoBehaviour
 {
     [SerializeField] private Transform _Target;
-    private void start()
+    private void Start()
     {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(_Target.position);

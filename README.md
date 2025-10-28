@@ -32,6 +32,7 @@ Need Unity-provided methods like Start() (initialize variables), Update() (updat
 For start(), When the script starts, initialize NavMeshAgent, Animator, and set the initial state and movement speed.
 For update(), Continuously check for player input, update the character's movement and animation based on the input and NavMeshAgent's state.
 
+I had been having some trouble with the step of making the deer move on its own. No matter how I modified my code, the deer just stood still. Later, I asked LA, and she told me that I should drag the script of the deer into the deer's Inspector. After doing that, I finally solved my problem.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
