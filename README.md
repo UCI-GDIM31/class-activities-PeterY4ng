@@ -39,7 +39,7 @@ URL
 https://docs.google.com/document/d/13WL1faOUeHHIt5U-4Nu450rY6-oTy8zhNi828PVl7UI/edit?tab=t.0
 We are table 19, I am doing Unity engine
 
-activity 2
+The chasing speed is set via the _speed variable, and the player's position is stored using _playerTransform. The EnableChase method is used to activate chasing and record the player as the target, while the DisableChase method is for deactivating chasing. We need to first define a class structure that inherits from MonoBehaviour, then set up variables for controlling speed and storing the player's position, followed by implementing methods to activate and deactivate chasing, and finally add the logic in BatManager to make the bat move towards the player.
 
 ## Open-Source Assets
 ### W1
