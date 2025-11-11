@@ -96,8 +96,8 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
-
+        transform.Translate(movement * Vector3.forward * _moveSpeed * Time.deltaTime);
+        
         // STEP 2 -------------------------------------------------------------
 
 
