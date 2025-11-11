@@ -41,6 +41,14 @@ We are table 19, I am doing Unity engine
 
 The chasing speed is set via the _speed variable, and the player's position is stored using _playerTransform. The EnableChase method is used to activate chasing and record the player as the target, while the DisableChase method is for deactivating chasing. We need to first define a class structure that inherits from MonoBehaviour, then set up variables for controlling speed and storing the player's position, followed by implementing methods to activate and deactivate chasing, and finally add the logic in BatManager to make the bat move towards the player.
 
+### W7
+URL
+https://docs.google.com/document/d/1Big5iCIqdYzUKfa1Z3fyaYFgzxHEucc_XLNDuWF1kiQ/edit?tab=t.0
+We are table 19£¬ I am doing the Gameplay
+
+In Step 2, the original use of transform.position calculates movement based on world axes. This causes the rat's movement and rotation to behave erratically when it comes into contact with bubbles. However, if replaced with transform.Translate, the rat will move normally.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
